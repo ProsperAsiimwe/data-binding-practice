@@ -1,0 +1,17 @@
+
+<div class="row">
+  <div class="container">
+    <div class="col-lg-3">
+      <input type="text" class="form-control" [(ngModel)]="username" placeholder="name goes here">
+      <p>{{username}}</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+<div class="container">
+<div class="col-lg-3">
+<button class="btn btn-primary" [disabled]="username==null || username.length==0" (click)="resetUserName()" type="reset">RESET USER NAME</button>
+</div>
+</div>
+</div>
